@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 import Header from "../components/Header";
 
 test("renders a <header> element", () => {
-  const { container } = render(<Header />);
+  const { container } = render(<Header name="Underreacted" />);
   expect(container.querySelector("header")).toBeInTheDocument();
 });
 
